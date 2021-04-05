@@ -1,5 +1,24 @@
 <body>
   <p id="notice"></p>
   <h1>Books</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Body</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <% @books.each do |book| %>
+     <span><%= book.title %></span>
+     <span><%= book.body %></span>
+     <a href="#">Show</a>
+     <a href="#">Edit</a>
+     <a href="#">Destroy</a>
+    <% end %>
+
+  </table>
+
   
 </body>
