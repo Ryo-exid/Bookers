@@ -23,11 +23,11 @@
     <%= f.text_area :body %>
     </br>
   </div>
-  
+
   <div class="actions">
     <%= f.submit 'Update Book' %>
   </div>
 <% end %>
 
 
-<a><%= link_to "Show", book_path(@book.id) %></a> | <a><%= link_to "Back", :back %></a>
+<a><%= link_to "Show", book_path(@book.id) %></a> | <a><%= link_to "Back", 'javascript:history.back()' %></a>
