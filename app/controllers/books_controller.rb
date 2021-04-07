@@ -16,6 +16,8 @@ class BooksController < ApplicationController
     if @book.save
       # 投稿に成功した場合
       redirect_to book_path(@book.id), notice: "Book was successfully created."
+    else # 投稿に失敗した場合、新規登録画面に
+      render :new
     end
     
   end
